@@ -89,7 +89,7 @@ Whenever a new order is added to Airtable, the workflow triggers, generates an A
 ---
 
 ## Testing
-- Add a new row in Airtable (e.g., order number `006`, customer `Maria`, product `Test Printer`, price `300`, status `Completed`)  
+- Add a new row in Airtable (e.g., order number `006`, customer `Uday`, product `Test Printer`, price `300`, status `Completed`)  
 - Workflow triggers automatically within a minute  
 - Email is generated and sent to recipient  
 - Execution logs can be monitored in n8n
@@ -105,7 +105,7 @@ It helps automate feedback tracking and categorize responses as *Positive*, *Neg
 
 ---
 
-## ⚙️ Workflow Summary
+## Workflow Summary
 
 | Step | Node | Function |
 |------|------|-----------|
