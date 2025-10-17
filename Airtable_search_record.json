@@ -1,0 +1,136 @@
+{
+  "name": "Airtable_search_record",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 1
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -384,
+        -48
+      ],
+      "id": "0be40803-f5b0-4941-b3dc-0f909565d137",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "operation": "search",
+        "base": {
+          "__rl": true,
+          "value": "appT0kup21kEhBmNo",
+          "mode": "list",
+          "cachedResultName": "Test Airtable",
+          "cachedResultUrl": "https://airtable.com/appT0kup21kEhBmNo"
+        },
+        "table": {
+          "__rl": true,
+          "value": "tblWjLpjiTDpDDq1C",
+          "mode": "list",
+          "cachedResultName": "Table 1",
+          "cachedResultUrl": "https://airtable.com/appT0kup21kEhBmNo/tblWjLpjiTDpDDq1C"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [
+        -144,
+        -64
+      ],
+      "id": "769f1fd2-98ed-4fb5-936d-1f240c540166",
+      "name": "Search records",
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "5x1bVKBdTYCRoOhi",
+          "name": "Airtable Personal Access Token account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "Room",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        112,
+        -64
+      ],
+      "id": "aa3dd965-ee9b-4696-b6b6-cfd7d3add8ba",
+      "name": "Convert to File"
+    },
+    {
+      "parameters": {
+        "operation": "write",
+        "fileName": "C:\\Users\\udayd\\Desktop\\AI AUTOMATION\\n8n\\test.txt.txt",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        368,
+        -64
+      ],
+      "id": "8d5ae308-73f3-4283-a838-cdc32054297a",
+      "name": "Read/Write Files from Disk"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Search records",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search records": {
+      "main": [
+        [
+          {
+            "node": "Convert to File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File": {
+      "main": [
+        [
+          {
+            "node": "Read/Write Files from Disk",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "eb4b0839-c940-43bf-aa03-ca8ba009a5ea",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "47c4b42bb67b84316daf18b45eaa745289d3d9ad2600a506e7fbb6a36a25be80"
+  },
+  "id": "CY6qMEQV5Uy0Tj28",
+  "tags": []
+}
