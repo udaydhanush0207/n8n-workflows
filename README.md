@@ -30,7 +30,7 @@ It is designed to take input data (e.g., Name, Room preference) and automaticall
 - Start with test data to avoid overwriting real records  
 - Screenshots show the workflow layout and configuration
 
-- # n8n Workflow: Airtable Search Record
+# n8n Workflow: Airtable Search Record
 
 ## Description
 This workflow demonstrates how to search records in Airtable using n8n.
