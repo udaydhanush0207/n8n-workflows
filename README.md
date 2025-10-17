@@ -1,6 +1,6 @@
 # n8n Workflow: Airtable Record Automation
 
-![Airtable Search Workflow](Screenshots/Airtable_1.png)
+![Airtable Search Workflow](Screenshots/Airtable_3.png)
 
 ## Description
 This workflow demonstrates how to automate Airtable record creation using n8n.  
