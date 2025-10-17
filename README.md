@@ -127,40 +127,6 @@ It helps automate feedback tracking and categorize responses as *Positive*, *Neg
    - Add key in n8n credentials
 
 ---
-
-# n8n Workflow: Sentiment Analysis with OpenAI & Google Sheets
-
-![Sentiment Analysis Workflow](Screenshots/Sentiment_Check_with_GS.png)
-
-## Overview
-This n8n workflow performs **sentiment analysis** on customer feedback using **OpenAI (GPT-4)** and logs the results into **Google Sheets**.  
-It helps automate feedback tracking and categorize responses as *Positive*, *Negative*, or *Neutral*.
-
----
-
-## ⚙️ Workflow Summary
-
-| Step | Node | Function |
-|------|------|-----------|
-| 1️⃣ | **Google Sheets (Read)** | Fetch feedback text from a sheet |
-| 2️⃣ | **OpenAI (GPT-4)** | Analyze sentiment and reasoning |
-| 3️⃣ | **Google Sheets (Update)** | Write sentiment & reason back |
-
----
-
-## Setup Requirements
-
-1. **Google Cloud**
-   - Enable **Sheets API** & **Drive API**  
-   - Create **OAuth2 credentials** and connect in n8n  
-   - Add redirect URI shown in n8n credentials
-
-2. **OpenAI**
-   - Get API key from [OpenAI Dashboard](https://platform.openai.com/)  
-   - Add key in n8n credentials
-
----
-
 ## Author
 **Uday Dhanush**  
 Portfolio: [https://github.com/udaydhanush0207]
