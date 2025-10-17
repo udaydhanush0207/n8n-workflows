@@ -44,7 +44,7 @@ To automatically retrieve records based on input criteria, e.g., search by Name 
 3. Returns matching records
 
 ## Screenshots
-![Airtable_Create_Workflow](Screenshots/Airtable.png)
+![Airtable Record Workflow](Screenshots/Airtable_2.png)
 ![Airtable Search Workflow](Screenshots/Airtable_1.png)
 
 
