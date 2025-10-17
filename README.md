@@ -24,43 +24,28 @@ It is designed to take input data (e.g., Name, Room preference) and automaticall
   - Columns mapped: Name, Room
 
 ---
-
-# n8n Workflow: Airtable Record Automation
-
-## Description
-This workflow automates record creation in Airtable using n8n.  
-It demonstrates how to send input data (like Name, Room) to an Airtable base automatically.  
-
-**Purpose:**  
-- Learn n8n automation  
-- Integrate Airtable with automated workflows  
-- Build a professional portfolio
-
-
-## Workflow Details
-
-**Trigger:** Manual or scheduled workflow in n8n  
-
-**Nodes Used:**
-- **Start Node:** Workflow entry point  
-- **Set Node:** Prepares input data  
-- **Airtable Node (Create Record):** Sends data to Airtable  
-  - Base: Test Airtable  
-  - Table: Table 1  
-  - Columns mapped: Name, Room
-
-## Steps to Run
-
-1. Clone this repository:
-```bash
-git clone https://github.com/yourusername/n8n-workflows.git
-```
-
 ## Notes
 - Make sure your Airtable token has scopes: `read`, `write`, `schema`  
 - Ensure your base and table are accessible from the token  
 - Start with test data to avoid overwriting real records  
 - Screenshots show the workflow layout and configuration
+
+- # n8n Workflow: Airtable Search Record
+
+## Description
+This workflow demonstrates how to search records in Airtable using n8n.
+
+## Purpose
+To automatically retrieve records based on input criteria, e.g., search by Name or Room.
+
+## Steps
+1. Input data (Name or ID)
+2. n8n searches the Airtable base
+3. Returns matching records
+
+## Screenshots
+![Airtable Search Workflow](Screenshots/Airtable_1.png)
+
 
 ## Author
 **Uday Dhanush**  
