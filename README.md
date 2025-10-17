@@ -1,6 +1,6 @@
 # n8n Workflow: Airtable Record Automation
 
-![Airtable Search Workflow](Screenshots/Airtable_3.png)
+![Airtable Search Workflow](Screenshots/Airtable_1.png)
 
 ## Description
 This workflow demonstrates how to automate Airtable record creation using n8n.  
@@ -48,7 +48,7 @@ To automatically retrieve records based on input criteria, e.g., search by Name 
 
 # 📧 Email Automation for Customer Bookings
 
-![Airtable Email Workflow](Screenshots/Airtable_3.png)
+![Airtable Email Workflow](Screenshots/Airtable_to_mail.png)
 
 ## Overview
 This workflow demonstrates how to automate email notifications for new customer orders using **n8n**, **Airtable**, **OpenAI (ChatGPT/GPT-4)**, and **Gmail**.  
