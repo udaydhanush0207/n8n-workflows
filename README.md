@@ -1,5 +1,7 @@
 # n8n Workflow: Airtable Record Automation
 
+![Airtable Search Workflow](Screenshots/Airtable_1.png)
+
 ## Description
 This workflow demonstrates how to automate Airtable record creation using n8n.  
 It is designed to take input data (e.g., Name, Room preference) and automatically create records in an Airtable base.
@@ -32,6 +34,7 @@ It is designed to take input data (e.g., Name, Room preference) and automaticall
 
 # n8n Workflow: Airtable Search Record
 
+![Airtable Record Workflow](Screenshots/Airtable_2.png)
 ## Description
 This workflow demonstrates how to search records in Airtable using n8n.
 
@@ -42,11 +45,6 @@ To automatically retrieve records based on input criteria, e.g., search by Name 
 1. Input data (Name or ID)
 2. n8n searches the Airtable base
 3. Returns matching records
-
-## Screenshots
-![Airtable Record Workflow](Screenshots/Airtable_2.png)
-![Airtable Search Workflow](Screenshots/Airtable_1.png)
-
 
 ## Author
 **Uday Dhanush**  
