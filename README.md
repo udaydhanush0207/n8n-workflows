@@ -48,7 +48,7 @@ To automatically retrieve records based on input criteria, e.g., search by Name 
 
 # 📧 Email Automation for Customer Bookings
 
-![Airtable Record Workflow](Screenshots/Airtable_3.png)
+![Airtable Email Workflow](Screenshots/Airtable_3.png)
 
 ## Overview
 This workflow demonstrates how to automate email notifications for new customer orders using **n8n**, **Airtable**, **OpenAI (ChatGPT/GPT-4)**, and **Gmail**.  
