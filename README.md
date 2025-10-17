@@ -46,6 +46,56 @@ To automatically retrieve records based on input criteria, e.g., search by Name 
 2. n8n searches the Airtable base
 3. Returns matching records
 
+# 📧 Email Automation for Customer Bookings
+
+![Airtable Record Workflow](Screenshots/Airtable_3.png)
+
+## Overview
+This workflow demonstrates how to automate email notifications for new customer orders using **n8n**, **Airtable**, **OpenAI (ChatGPT/GPT-4)**, and **Gmail**.  
+Whenever a new order is added to Airtable, the workflow triggers, generates an AI-powered summary email, and sends it automatically.
+
+---
+
+## Workflow Details
+
+**Trigger:** Airtable → monitors new or updated records every minute  
+**Processing:** OpenAI GPT-4 → generates a clear email summary of the order  
+**Action:** Gmail → sends the email to the designated recipient
+
+---
+
+## Steps
+
+1. **Airtable Trigger**
+   - Base: `Customer Orders`
+   - Table: `Table 2`
+   - Trigger Field: `Order Number`
+   - Polling interval: 1 minute
+   - Fetch Test Event to confirm connection
+
+2. **OpenAI Node**
+   - Model: GPT-4
+   - Operation: Message Model
+   - Prompt: Generates email with **Email, Subject, Content**
+   - Variables mapped from Airtable: Order Number, Customer, Product, Quantity, Price, Date, Status
+
+3. **Gmail Node**
+   - Operation: Send a Message
+   - OAuth credentials via Google Cloud Console
+   - Maps OpenAI output fields to **Subject** and **Body**
+   - Sends email to specified recipient
+   - Plain text format for clarity
+
+---
+
+## Testing
+- Add a new row in Airtable (e.g., order number `006`, customer `Maria`, product `Test Printer`, price `300`, status `Completed`)  
+- Workflow triggers automatically within a minute  
+- Email is generated and sent to recipient  
+- Execution logs can be monitored in n8n
+
+---
+
 ## Author
 **Uday Dhanush**  
 Portfolio: [https://github.com/udaydhanush0207]
