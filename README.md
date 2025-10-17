@@ -46,7 +46,7 @@ To automatically retrieve records based on input criteria, e.g., search by Name 
 2. n8n searches the Airtable base
 3. Returns matching records
 
-# Email Automation for Customer Bookings
+# n8n Workflow: Email Automation for Customer Bookings from Airtable to Gmail
 
 ![Airtable Email Workflow](Screenshots/Airtable_to_mail.png)
 
