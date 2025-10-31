@@ -10,10 +10,15 @@ When new files are uploaded to a Google Drive folder, the workflow automatically
 ⚙️ Workflow Summary
 Step	Node	Function
 1️⃣	Google Drive (Trigger)	Monitors a folder (e.g., “Tesla Earnings”) for new file uploads every minute
+
 2️⃣	Google Drive (Download)	Downloads the newly added PDF file
+
 3️⃣	Document Loader	Reads binary file data
+
 4️⃣	Text Splitter	Splits content into 800-character chunks with 50-character overlap
+
 5️⃣	OpenAI Embeddings	Converts text chunks into numerical vectors
+
 6️⃣	Pinecone Vector Store	Inserts vectors into the database with metadata for file tracking
 🚀 Result
 
