@@ -1,39 +1,53 @@
-RAG Agent (Part 1): Auto-Updating Vector Database from Google Drive
+# RAG Agent (Part 1): Auto-Updating Vector Database from Google Drive  
 
-Tools: n8n | Google Drive API | Pinecone | OpenAI Embeddings 
+**Tools:** n8n | Google Drive API | Pinecone | OpenAI Embeddings  
 
-🎯 Overview
+---
 
-This workflow automates document ingestion into a Pinecone vector database.
-When new files are uploaded to a Google Drive folder, the workflow automatically downloads them, processes the content, creates embeddings via OpenAI, and stores them in Pinecone — no manual updates required.
+## 🎯 Overview  
+This workflow automates document ingestion into a Pinecone vector database.  
+Whenever a new file is uploaded to a designated Google Drive folder, the workflow automatically:  
+- Detects the upload  
+- Downloads the file  
+- Extracts and splits the content  
+- Generates embeddings using OpenAI  
+- Inserts the data into Pinecone with metadata for tracking  
 
-⚙️ Workflow Summary
-Step	Node	Function
-1️⃣	Google Drive (Trigger)	Monitors a folder (e.g., “Tesla Earnings”) for new file uploads every minute
+No manual refresh or re-upload needed — the vector database updates itself in real time.  
 
-2️⃣	Google Drive (Download)	Downloads the newly added PDF file
+---
 
-3️⃣	Document Loader	Reads binary file data
+## ⚙️ Workflow Summary  
 
-4️⃣	Text Splitter	Splits content into 800-character chunks with 50-character overlap
+| Step | Node | Function |
+|------|------|-----------|
+| 1️⃣ | **Google Drive (Trigger)** | Monitors a folder (e.g., “Tesla Earnings”) for new uploads every minute |
+| 2️⃣ | **Google Drive (Download)** | Downloads the newly added PDF file |
+| 3️⃣ | **Document Loader** | Reads binary file data for processing |
+| 4️⃣ | **Text Splitter** | Splits content into ~800-character chunks with ~50 overlap |
+| 5️⃣ | **OpenAI Embeddings** | Converts text chunks into vector representations |
+| 6️⃣ | **Pinecone Vector Store** | Inserts vectors into the database with metadata for file tracking |
 
-5️⃣	OpenAI Embeddings	Converts text chunks into numerical vectors
+---
 
-6️⃣	Pinecone Vector Store	Inserts vectors into the database with metadata for file tracking
-🚀 Result
+## 🚀 Result  
+- Fully automated document-to-vector pipeline  
+- Each new Google Drive upload updates the Pinecone index automatically  
+- Enables continuous knowledge updates for AI chatbots and retrieval systems  
 
-Fully automated document-to-vector pipeline
+---
 
-Each new Drive upload updates the Pinecone vector store automatically
+## 🧠 Key Concepts  
+- Event-driven automation using n8n  
+- Embedding text with OpenAI for semantic search  
+- Scalable vector database management in Pinecone  
 
-Ideal for knowledge-base chatbots and dynamic retrieval systems
+---
 
-🧠 Key Concepts
+## 🎥 Demo  
+(https://www.loom.com/share/7c7dab797c934e9d9cb5ec35156e5d07)
+---
 
-Event-driven automation with n8n
 
-Cloud-based vector database (Pinecone)
+**Author:** [Uday Dhanush](https://github.com/udaydhanush0207)
 
-Embedding generation with OpenAI models (text-embedding-3-small)
-
-Namespace and metadata management for version control
