@@ -1,6 +1,6 @@
 RAG Agent (Part 1): Auto-Updating Vector Database from Google Drive
 
-Tools: n8n | Google Drive API | Pinecone | OpenAI Embeddings
+Tools: n8n | Google Drive API | Pinecone | OpenAI Embeddings 
 
 🎯 Overview
 
