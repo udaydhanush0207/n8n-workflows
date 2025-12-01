@@ -7,6 +7,8 @@
 ## 🎯 Overview
 This workflow transforms the auto-updating Pinecone vector database (from Part 1) into a fully functional **Retrieval-Augmented Generation (RAG) AI Agent**.
 
+<img width="3200" height="1662" alt="image" src="https://github.com/user-attachments/assets/9d4d7c0b-5533-4cd3-9e9a-748d4021d6f6" />
+
 Whenever a user submits a question, the agent:
 - Performs **vector search** in Pinecone
 - Retrieves the most relevant document chunks
