@@ -40,6 +40,9 @@ This ensures responses are **accurate, contextual, and document-based** rather t
 
 ## 🚀 Final Output
 
+<img width="3196" height="1666" alt="image" src="https://github.com/user-attachments/assets/bc8ec4dd-7a63-4f69-85c9-666199284b90" />
+
+
 - Answers questions based on **PDF uploads**  
 - Knowledge base updates **automatically** (from Part 1 pipeline)  
 - Provides **accurate, document-grounded insights**  
